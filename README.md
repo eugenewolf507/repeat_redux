@@ -1,2 +1,6 @@
-# tryRedax
-Learn Redux, Hooks ...
+Lear Redux:
+Redux
+Selectors
+Middleware
+Async
+Hooks
