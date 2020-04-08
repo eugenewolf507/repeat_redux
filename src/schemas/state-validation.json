@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "required": ["timer", "posts"],
+  "properties": {
+    "timer": {
+      "$id": "#/properties/timer",
+      "type": "object",
+      "title": "The Timer Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "step": 0.0,
+          "value": 0.0
+        }
+      ],
+      "required": ["value", "step"],
+      "properties": {
+        "value": {
+          "$id": "#/properties/timer/properties/value",
+          "type": "integer",
+          "title": "The Value Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [0]
+        },
+        "step": {
+          "$id": "#/properties/timer/properties/step",
+          "type": "integer",
+          "title": "The Step Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [0]
+        }
+      }
+    },
+    "posts": {
+      "$id": "#/properties/posts",
+      "type": "object",
+      "title": "The Posts Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "items": [],
+          "selectedTag": null
+        }
+      ],
+      "required": ["items", "selectedTag"],
+      "properties": {
+        "items": {
+          "$id": "#/properties/posts/properties/items",
+          "type": "array",
+          "title": "The Items Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": []
+        },
+        "selectedTag": {
+          "$id": "#/properties/posts/properties/selectedTag",
+          "title": "The Selectedtag Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": null,
+          "examples": [null]
+        }
+      }
+    }
+  }
+}

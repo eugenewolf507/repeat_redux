@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 import Select from "react-select";
-import * as timerActions from "../../redux/timerActions";
-import * as timerSelectors from "../../redux/timerSelectors";
+import * as timerActions from "../../redux/timer/timerActions";
+import * as timerSelectors from "../../redux/timer/timerSelectors";
 import styles from "./stepSelector.module.css";
 
 const options = [

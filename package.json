@@ -11,13 +11,16 @@
     "react-redux": "^7.2.0",
     "react-scripts": "3.4.1",
     "react-select": "^3.1.0",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "reselect": "^4.0.0",
+    "tv4": "^1.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "json-server jsonserver/db.json --watch --port 3005 --delay 200"
   },
   "eslintConfig": {
     "extends": "react-app"
