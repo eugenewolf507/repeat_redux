@@ -4,6 +4,7 @@ import timerReducer from "./timer/timerReducer";
 import postsReducer from "./posts/postsReducer";
 import logger from "./middleware/logger";
 import throttle from "./middleware/throttle";
+import ReduxThunk from "redux-thunk";
 import stateValidation from "./middleware/state-validation";
 
 const rootReducer = combineReducers({
@@ -11,7 +12,7 @@ const rootReducer = combineReducers({
   posts: postsReducer,
 });
 
-const enhancer = applyMiddleware(stateValidation, throttle, logger);
+const enhancer = applyMiddleware(ReduxThunk, stateValidation, throttle, logger);
 
 const store = createStore(rootReducer, composeWithDevTools(enhancer));
 
